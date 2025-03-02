@@ -16,11 +16,11 @@
     ],
     "web_accessible_resources": [{
         "resources": ["dioxus-extension_bg.wasm", "dioxus-extension.js", "index.js"],
-        "matches": ["*://example.com/*"]
+        "matches": ["<all_urls>"]
     }],
     "action": {
         "default_popup": "index.html",
-        "default_title": "User script"
+        "default_title": "Popup page"
     },
     "manifest_version": 3
 }

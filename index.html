@@ -2,10 +2,26 @@
 <html>
 
 <head>
+    <!-- Inject the style here so that popup opens up to correct size  -->
+    <style>
+        html {
+            min-height: 20em;
+            min-width: 30em;
+            background: rgb(173, 169, 218);
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            background: rgb(173, 169, 218);
+        }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dioxus</title>
-    <script type="module" src="index.js"></script>
+    <!-- Attaching stylesheet here as workaround for Stylesheet unable to be used due to unsafe eval -->
+    <link rel="stylesheet" href="/assets/tailwind.css">
+    <script type="module" src="./index.js"></script>
 </head>
 
 <body>

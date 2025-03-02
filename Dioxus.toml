@@ -1,0 +1,35 @@
+[application]
+
+# App (Project) Name
+name = "Dioxus"
+
+[web.app]
+
+# HTML title tag content
+title = "Dioxus v0.6"
+
+[web.watcher]
+
+# when watcher trigger, regenerate the `index.html`
+reload_html = true
+
+# which files or dirs will be watcher monitoring
+watch_path = ["src", "assets"]
+
+# include `assets` in web platform
+[web.resource]
+
+# Additional CSS style files
+style = ["assets/tailwind.css"]
+
+# Additional JavaScript files
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []
+
+[web.wasm_opt]
+debug = true

@@ -2,20 +2,30 @@
 name = "dioxus-extension"
 version = "0.1.0"
 authors = ["Evan Almloff <ealmlof1@stumail.jccc.edu>"]
-edition = "2018"
+edition = "2021"
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-console_error_panic_hook = "0.1.6"
-dioxus = "0.3.2"
-dioxus-web = "0.3.1"
-wasm-bindgen = "0.2.86"
+console_error_panic_hook = "0.1.7"
+wasm-bindgen = "0.2.100"
+wasm-bindgen-futures = "0.4.34"
+dioxus = "0.6.3"
+
+[dependencies.dioxus-web]
+version = "0.6.3"
+[features]
+default = ["web"]
+web = ["dioxus/web"]
 
 [dependencies.web-sys]
 version = "0.3"
 features = [
     "console",
-    "Window"
+    "Window",
+    "HtmlDocument"
 ]
+
+[profile.dev]
+debug = 1
