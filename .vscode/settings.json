@@ -1,0 +1,10 @@
+{
+    "rust-analyzer.procMacro.enable": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "files.exclude": {
+        "**/target": true,
+        "**/node_modules": true,
+    },
+    "terminal.integrated.defaultProfile.linux": "bash"
+}
